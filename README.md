@@ -23,9 +23,9 @@ The primary feature of the code for developing PMI IVS is that is caters to sixt
 
 Different approaches used for PMI IVS by considering bandwidth and boundary issues 
 
- 	      MI	              RE	                          Module
+ 	MI	                RE	                       
  	      
-Method 	Bandwidth	Kernel	Bandwidth	Kernel	Regression 	Name
+Method 	Bandwidth Kernel Bandwidth Kernel Regression Module Name
 
 B1	    GRR	      CK	    GRR	      CK	    GRNN	      *1PMI_B1
 
