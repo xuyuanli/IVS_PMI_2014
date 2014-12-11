@@ -1,0 +1,22 @@
+ Debug    : All messages being written to log file (if no path - written to current executable directory): RFortran.log
+ Debug    : Using msg_db: RFORTRAN, located at D:\Data\RFortran\settings\RFortran_MsgDB.csv
+ Debug    : Current executable directory: D:\Data\Documents\Visual Studio 2008\Projects\MITest200314\PMI_PDFTESTS_J1\
+ Debug    : RFORTRAN_PATH: D:\Data\RFortran
+ Debug    : RFortran Settings File: D:\Data\RFortran\settings\RFortran.set
+ Debug    : RGuiVisible: T
+---
+RFortran Library v3.0.0 - 14 Feb 2011
+Copyright (C) 2006-2011 Mark Thyer, Michael Leonard, Dmitri Kavestki. All
+ rights reserved.
+
+RFortran is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Please see RFortran_README.txt in the RFortran install folder for details.
+
+If you find RFortran useful please cite it using the following:
+  Thyer, M., M. Leonard, D. Kavetski, S. Need, and B. Renard (2011),
+  The open source RFortran library for accessing R from Fortran,
+  with applications in environmental modelling,
+  Environmental Modelling & Software, 26(2), 219-234.
+---
+ Debug    : R working directory: D:\Data\Documents\Visual Studio 2008\Projects\MITest200314\PMI_PDFTESTS_J1\
