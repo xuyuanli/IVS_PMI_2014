@@ -43,21 +43,21 @@ R2/	    DPI/	      CK/	    SVO/	      BK/	    GRNN/	       9PMI_R2
 
 R3/	    DPI/	      CK/	    SVO/	      PA/	    GRNN/	       10PMI_R3
 
-R4/	    DPI/	      CK/	    SVO/	      CK/	    LBR/	               11PMI_R4
+R4/	    DPI/	      CK/	    SVO/	      CK/	    LBR/	       11PMI_R4
 
-R5/	    DPI/	      CK/	    SVO/	      CK/	    LLP/	              *3PMI_R5
+R5/	    DPI/	      CK/	    SVO/	      CK/	    LLP/	      *3PMI_R5
 
-R6/	    DPI/	      CK/	    SVO/	      CK/	    LQP/	               12PMI_R6
+R6/	    DPI/	      CK/	    SVO/	      CK/	    LQP/	       12PMI_R6
 
-R7/	    DPI/              CK/	     -/	      -/	            MLPANN/	      *4PMI_R7
+R7/	    DPI/              CK/	     -/	              -/	    MLPANN/	      *4PMI_R7
 
 C1/	    DPI/	      RK/	    SVO/	      RC/	    GRNN/	       13PMI_C1
 
-C2/	    DPI/	      RK/	    SVO/	      CK/	    LBR/	               14PMI_C2
+C2/	    DPI/	      RK/	    SVO/	      CK/	    LBR/	       14PMI_C2
 
-C3/	    DPI/	      RK/	    SVO/	      CK/	    LLP/	               15PMI_C3/
+C3/	    DPI/	      RK/	    SVO/	      CK/	    LLP/	       15PMI_C3
 
-C4/	    DPI/	      RK/	     -/	      -/	            MLPANN/	       16PMI_C4/
+C4/	    DPI/	      RK/	     -/	              -/	     MLPANN/	       16PMI_C4
 
 (B: benchmark approach; M: boundary correction in MI estimation; R: reducing boundary impact in residual estimation; C: combination of methods resistant to boundary issue, used in both MI and residual estimations; CK: conventional kernel with symmetric Gaussian kernel and GRR based bandwidth; * recommended approaches for distinct scenarios and already linked in the main program)
 
