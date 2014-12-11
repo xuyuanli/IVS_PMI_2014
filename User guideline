@@ -1,0 +1,88 @@
+User guideline:    
+
+This is the guideline for the program ‘IVS_PMI_2014’.   
+
+1. Objective of this program:
+This program is compiled for the improved partial mutual information based input variable selection (PMI IVS) with the consideration of boundary issues associate with bandwidth estimation.  The detail theory and discussion can be referred to ‘Li, X., Zecchin, A.C., Maier, H.R., 2014. Improving Partial Mutual Information-based input variable selection by consideration of boundary issues associated with bandwidth estimation. Environmental Modelling and Software, submitted on 04/12/2014.’
+
+
+
+2.  How to use this program:
+This program can be run on windows PGI visual FORTRAN 2008 (or lower version) and Linux 2.6.32.2.
+
+2.1 On windows 
+	Prepare input files (see the example file ‘EAR4_NORM.txt’);  
+The format is: 
+1st line:  No. of data in each input      No. of input    ( e.g.  1000   3 )
+2nd line:  Input 1    input 2   input 3   output     ( e.g  Input(1,1)   Input(1,2)  Input(1,3)  output(1)  )   
+3rd line:  Input 1    input 2   input 3   output     ( e.g  Input(2,1)   Input(2,2)  Input(2,3)  output(2)   )  
+⋮
+1000th line: Input 1   input 2  input 3  output  ( e.g  Input(1000,1)   Input(1000,2)  Input(1000,3)  output(1000)  )   
+(*Please also see the example file ‘EAR4_NORM.txt’);
+(*If there are 30 repeats and each repeat contains 500 data, put all 30*500 data in the input file  and the No. of data in each input is 30*500);
+	Compile and execute the ‘IVS_PMI_BSBC_2014.pvfproj’ file ;
+	Select the PMIIVS with the proposed estimators for MI and RE; see the suggestions on the screen;
+	Type in the no. of repeating tests; this program allows any number of repeats; 
+	Check the output files;
+	
+2.2 On Linux
+	Build program file and load all f90 files and input files (see the example file ‘EAR4_NORM.txt’);
+	Write a batch file or simply link the program with the following code:
+‘ifort PSOmod.f90 GLS.f90 1PMIB1.f90 2PMIB2.f90 3PMIR5.f90 4PMIR7
+.f90 IVSPMI_2014main.f90 -o test1.run;
+	Execute  ‘test1.run’;
+
+	Select the PMIIVS with the proposed estimators for MI and RE; see the suggestions on the screen;
+	Type in the no. of repeating tests; this program allows any number of repeats; 
+	Check the output files;
+
+Except the four recommended methods, you can also use the other twelve tested methods by simply linking the name of the module to the main program and call the PMI based subroutine in the main program. It needs to be aware that 
+	the PSO searching parameters (used in R7, C4) can change based on user’s preference  (as highlighted)
+i.e. 
+Searching range of each variable:
+ SUBROUTINE ‘PSOA0’, ‘PSOA1’, ‘PSOA2’, ‘PSOA3’, CALL ComputeObjectiveFunction0
+(ix,oy,r,c,(-10.0000+20.0000*(swarm%particle(j)%x)),f)
+sp(i)=-10.0000+20.0000*swarm%GB(1)%x(i) 
+
+PSO searching behaviour:
+      SUBROUTINE set_PSO_parameters(swarm)
+              USE mod_PSO, ONLY: type_PSO_swarm
+              TYPE(type_PSO_swarm), INTENT(INOUT) :: swarm
+              ! Control Parameters
+    swarm%NeighbourhoodFlag = 'vonNeumannU'   ! Type of neighbouthood structure
+	swarm%Nparticle         = 100                          ! Number of particles
+	swarm%Nelite            = 2                                 ! Number of elitist particles
+	swarm%NImax             = 100                           ! Maximum number of iterations
+	swarm%Nx                = 4                                   ! Size of decision string 
+	! Standard searching parameters
+	swarm%cNB               = 2.0		    ! Weighting coefficient for GB particle 
+	swarm%cPB               = 2.0		    ! Weighting coefficient for PB particle
+	swarm%cInertiaMax       = 0.9		    ! Maximum inertia coefficient
+	swarm%cInertiaMin       = 0.4		    ! Minimum inertia coefficient
+	swarm%vMax              = 0.5		    ! Velocity component bound
+	! Secondary searching parameters (not needed unless difficult problem, set swarm%perturbNI > swarm%NImax to not use)
+	swarm%perturbExp        = 5.0		    ! Perturbation Exponent
+	swarm%perturbProb       = 0.20		    ! Perturbation Probability
+	swarm%perturbEs         = 0.000005	    ! Expected value for start
+	swarm%perturbEe         = 0.0000000005	    ! Expected value for end
+	swarm%perturbNI         = 10001		    ! Start iteration for perturbation
+END SUBROUTINE set_PSO_parameters 
+	The application of M2 needs R-Fortran.
+
+
+
+3. Outputs:
+Be aware that all output files can be replaced, so backup all results after the tests.
+	File 1: Test_detailoutput1.txt; include rank of inputs, MI/PMI values, and significate inputs of each test;
+	File 2: Test_summaryoutput1.txt; include no. of significant inputs, order of inputs, PMI values, and computational cost of all tests;
+
+
+
+4.  Contact:
+If you have related issues during the application, please e-mail:
+Mr. XUYUAN LI                                    xliadelaide@gmail.com
+
+
+
+Thank you for using this program!   
+XUYUAN 09/12/2014
