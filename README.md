@@ -25,39 +25,39 @@ Different approaches used for PMI IVS by considering bandwidth and boundary issu
 
  	MI	                RE	                       
  	      
-Method 	Bandwidth Kernel Bandwidth Kernel Regression Module Name
+Method/ Bandwidth/ Kernel/ Bandwidth/ Kernel/ Regression/ Module Name
 
-B1	    GRR	      CK	    GRR	      CK	    GRNN	      *1PMI_B1
+B1/	    GRR/	      CK/	    GRR/	      CK/	    GRNN/	      *1PMI_B1
 
-B2	    DPI	      CK	    GRR	      CK	    GRNN	      *2PMI_B2
+B2/	    DPI/	      CK/	    GRR/	      CK/	    GRNN/	      *2PMI_B2
 
-B3	    DPI	      CK	    SVO	      CK	    GRNN	       5PMI_B3
+B3/	    DPI/	      CK/	    SVO/	      CK/	    GRNN/	       5PMI_B3
 
-M1	    DPI	      RC	    SVO	      CK	    GRNN	       6PMI_M1
+M1/	    DPI/	      RC/	    SVO/              CK/	    GRNN/	       6PMI_M1
 
-M2	    DPI	      BK	    SVO	      CK	    GRNN	       7PMI_M1
+M2/	    DPI/	      BK/	    SVO/	      CK/	    GRNN/	       7PMI_M1
 
-R1	    DPI	      CK	    SVO	      RC     	    GRNN	       8PMI_R1
+R1/	    DPI/	      CK/	    SVO/	      RC/     	    GRNN/	       8PMI_R1
 
-R2	    DPI	      CK	    SVO	      BK	    GRNN	       9PMI_R2
+R2/	    DPI/	      CK/	    SVO/	      BK/	    GRNN/	       9PMI_R2
 
-R3	    DPI	      CK	    SVO	      PA	    GRNN	       10PMI_R3
+R3/	    DPI/	      CK/	    SVO/	      PA/	    GRNN/	       10PMI_R3
 
-R4	    DPI	      CK	    SVO	      CK	    LBR	               11PMI_R4
+R4/	    DPI/	      CK/	    SVO/	      CK/	    LBR/	               11PMI_R4
 
-R5	    DPI	      CK	    SVO	      CK	    LLP	              *3PMI_R5
+R5/	    DPI/	      CK/	    SVO/	      CK/	    LLP/	              *3PMI_R5
 
-R6	    DPI	      CK	    SVO	      CK	    LQP	               12PMI_R6
+R6/	    DPI/	      CK/	    SVO/	      CK/	    LQP/	               12PMI_R6
 
-R7	    DPI	      CK	     -	      -	            MLPANN	      *4PMI_R7
+R7/	    DPI/              CK/	     -/	      -/	            MLPANN/	      *4PMI_R7
 
-C1	    DPI	      RK	    SVO	      RC	    GRNN	       13PMI_C1
+C1/	    DPI/	      RK/	    SVO/	      RC/	    GRNN/	       13PMI_C1
 
-C2	    DPI	      RK	    SVO	      CK	    LBR	               14PMI_C2
+C2/	    DPI/	      RK/	    SVO/	      CK/	    LBR/	               14PMI_C2
 
-C3	    DPI	      RK	    SVO	      CK	    LLP	               15PMI_C3
+C3/	    DPI/	      RK/	    SVO/	      CK/	    LLP/	               15PMI_C3/
 
-C4	    DPI	      RK	     -	      -	            MLPANN	       16PMI_C4
+C4/	    DPI/	      RK/	     -/	      -/	            MLPANN/	       16PMI_C4/
 
 (B: benchmark approach; M: boundary correction in MI estimation; R: reducing boundary impact in residual estimation; C: combination of methods resistant to boundary issue, used in both MI and residual estimations; CK: conventional kernel with symmetric Gaussian kernel and GRR based bandwidth; * recommended approaches for distinct scenarios and already linked in the main program)
 
