@@ -1,9 +1,5 @@
-IVS_PMI_2014
-============
-
 Partial mutual information based input variable selection
-
-
+============
 
 Overview:
 
