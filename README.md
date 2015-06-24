@@ -116,9 +116,10 @@ Other tested methods include:
 
 	B3, M1, M2 (need R-Fortran), R1, R2, R3, R4, R6, C1, C2, C3, C4
 	
-For the detail of each method, please refer to Li et al. (2014a).
+For the detail of each method, please refer to Li et al. (2015).
 
-Li, X., Zecchin, A.C., Maier, H.R., 2014a. Improving Partial Mutual Information-based input variable selection by consideration of boundary issues associated with bandwidth estimation. Environmental Modelling and Software, accepted on 26/05/2015, DOI:10.1016/j.envsoft.2015.05.013.
+Li X., Zecchin, A.C. and Maier, H.R., 2015. Improving Partial Mutual Information-based input variable selection by consideration of boundary issues associated with bandwidth estimation, Environmental Modelling and Software, 71, 78-96, DOI: 10.1016/j.envsoft.2015.05.013
+
 
 
 
@@ -138,11 +139,12 @@ Terms of Use:
 The software is freely available to use under the terms and conditions of the Creative Commons license.
 If you intend to use this software for an academic publication or report, we would appreciate your acknowledgement of the origin of the software by referencing the following article:
 
-Li, X., Maier, H.R., Zecchin, A.C., 2015. Improved PMI-based input variable selection approach for artificial neural network and other data driven environmental and water resource models. Environmental Modelling and Software 65 15-29 DOI: 10.1016/j.envsoft.2014.11.028.
+i, X., Maier, H.R., Zecchin, A.C., 2015a. Improved PMI-based input variable selection approach for artificial neural network and other data driven environmental and water resource models. Environmental Modelling and Software 65 15-29 DOI: 10.1016/j.envsoft.2014.11.028.
 
-Li, X., Zecchin, A.C., Maier, H.R., 2014a. Improving Partial Mutual Information-based input variable selection by consideration of boundary issues associated with bandwidth estimation. Environmental Modelling and Software, accepted on 26/05/2015, DOI:10.1016/j.envsoft.2015.05.013.
+Li X., Zecchin, A.C. and Maier, H.R., 2015b. Improving Partial Mutual Information-based input variable selection by consideration of boundary issues associated with bandwidth estimation, Environmental Modelling and Software, 71, 78-96, DOI: 10.1016/j.envsoft.2015.05.013
 
-Li, X., Zecchin, A.C., Maier, H.R., 2014b. Selection of smoothing parameter estimators for general regression neural networks - Applications to hydrological and water resources modelling. Environmental Modelling and Software 59 162-186 DOI: 110.1016/j.envsoft. 2014.1005.1010.
+Li, X., Zecchin, A.C. and Maier, H.R., 2014. Selection of smoothing parameter estimators for general regression neural networks - Applications to hydrological and water resources modelling. Environmental Modelling and Software 59 162-186 DOI: 110.1016/j.envsoft. 2014.1005.1010.
+
 
 
 
